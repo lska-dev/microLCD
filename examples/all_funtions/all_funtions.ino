@@ -9,7 +9,7 @@ I2C: SDA ---> A4
 I2C: SCL ---> A5
 
 адрес устройства (используйте i2c scaner для определения):*/
-const uint8_t adress = 0x27;
+const uint8_t adress = 0x27; //или 0х57
 
 //Кастомный символ смайлика
 const byte smile[] = {
