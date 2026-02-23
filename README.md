@@ -233,43 +233,9 @@ lcd.write(0);  // вывести сердечко
 
 ---
 
-## 💡 Пример использования всех функций
-
-```cpp
-#include <microLCD.h>
-microLCD lcd(0x27);
-
-const byte smile[] = {B00000, B01010, B01010, B00000, B10001, B01110, B00000, B00000};
-
-void setup() {
-    lcd.begin(LCD_4BITMODE, LCD_2LINE, LCD_5x8DOTS);
-    lcd.backlight(LCD_ON);
-    
-    lcd.createChar(0, smile);
-    
-    lcd.setCursor(0, 0);
-    lcd.print("Count: ");
-    lcd.setCursor(0, 1);
-    lcd.print("Time: ");
-    lcd.write(0);
-}
-
-void loop() {
-    lcd.setCursor(7, 0);
-    lcd.print(millis() / 1000);
-    
-    lcd.setCursor(6, 1);
-    lcd.print(String(millis()) + "ms");
-    
-    delay(100);
-}
-```
-
----
-
 ##  Установка
 
-1. Скачай [microLCD.zip](https://github.com/lska/microLCD/archive/main.zip)
+1. Скачай [microLCD.zip](https://github.com/lska-dev/microLCD/archive/refs/tags/release.zip)
 2. Arduino IDE: **Скетч → Подключить библиотеку → Добавить .ZIP библиотеку**
 
 ---
@@ -277,10 +243,8 @@ void loop() {
 ## Автор
 
 **l$ka** © 2026  
-GitHub: [@l$ka]([https://github.com/lska](https://github.com/lska-dev))
+GitHub: [@lska-dev](https://github.com/lska-dev)
 
 ---
 
 
-MIT License
-```
