@@ -8,7 +8,7 @@
 #define microLCD_h
 
 #include "Arduino.h"
-#include "microWire.h"
+#include "Wire.h"
 
 // Команды LCD
 #define LCD_LEDOFF 0x00
