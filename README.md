@@ -162,9 +162,10 @@ lcd.print("Hello World!");
 ```
 
 ### `print(String s)`
-Выводит String объект.
+Выводит String объект (поддерживает конкатенацию).
 
 ```cpp
+lcd.print(String("Value: ") + 42);
 lcd.print(String(millis()) + " ms");
 ```
 
